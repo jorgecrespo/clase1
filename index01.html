@@ -60,21 +60,22 @@
         <span id="segundos"></span >
         <span id="milisegundos"></span >
     </div>
+    <script>
+            setInterval(function() {
+                var hora = new Date();
+                var horas = hora.getHours() + " horas, ";
+                var minutos = hora.getMinutes() + " minutos, ";
+                var segundos = hora.getSeconds() + " segundos, ";
+                var milisegundos = hora.getMilliseconds() + " milisegundos."
+                    //       var horatexto = horas + minutos + segundos + milisegundos;
+                document.getElementById("horas").innerHTML = horas;
+                document.getElementById("minutos").innerHTML = minutos;
+                document.getElementById("segundos").innerHTML = segundos;
+                document.getElementById("milisegundos").innerHTML = milisegundos;
+            }, 1)
+        </script>
 </body>
 
-<script>
-    setInterval(function() {
-        var hora = new Date();
-        var horas = hora.getHours() + " horas, ";
-        var minutos = hora.getMinutes() + " minutos, ";
-        var segundos = hora.getSeconds() + " segundos, ";
-        var milisegundos = hora.getMilliseconds() + " milisegundos."
-            //       var horatexto = horas + minutos + segundos + milisegundos;
-        document.getElementById("horas").innerHTML = horas;
-        document.getElementById("minutos").innerHTML = minutos;
-        document.getElementById("segundos").innerHTML = segundos;
-        document.getElementById("milisegundos").innerHTML = milisegundos;
-    }, 1)
-</script>
+
 
 </html>
