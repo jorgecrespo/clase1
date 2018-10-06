@@ -48,15 +48,16 @@
             <input type="button" value="Mostrar Datos" onclick="alerta()">
         </form>
     </div>
+    <script>
+        function alerta() {
+
+            nombre = document.getElementById("nombre").value;
+            apellido = document.getElementById("apellido").value;
+            alert(nombre + ", " + apellido);
+        }
+    </script>
+
 </body>
 
-<script>
-    function alerta() {
-
-        nombre = document.getElementById("nombre").value;
-        apellido = document.getElementById("apellido").value;
-        alert(nombre + ", " + apellido);
-    }
-</script>
 
 </html>
