@@ -1,62 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <style>
-        div {
-            background-color: rgb(236, 232, 232);
-            border-radius: 3px;
-            padding: 20px;
-            max-width: 400px
-        }
-        
-        div * {
-            display: block;
-            position: relative;
-            align-self: center;
-            width: 100%
-        }
-        
-        input:last-of-type {
-            background-color: rgb(13, 163, 13);
-            border-radius: 5px;
-            border-color: rgb(50, 122, 59);
-            padding: 10px;
-            color: white
-        }
-    </style>
 </head>
-
 <body>
-
-    <div>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido">
-            <label for="fechanac">Fecha nacimiento:</label>
-            <input type="date" id="fechanac" name="fecha">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br>
-            <input type="button" value="Mostrar Datos" onclick="alerta()">
-        </form>
-    </div>
-    <script>
-        function alerta() {
-
-            nombre = document.getElementById("nombre").value;
-            apellido = document.getElementById("apellido").value;
-            alert(nombre + ", " + apellido);
-        }
-    </script>
-
+    hola mundo!
+<script>
+    let socket = new WebSocket('ws://192.168.0.178:3000');
+    console.log('main.js ok');
+</script>
 </body>
-
 </html>
